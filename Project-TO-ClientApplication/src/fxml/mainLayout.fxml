@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="applicationWindow" hgap="5.0" maxHeight="700.0" maxWidth="1200.0" minHeight="700.0" minWidth="1200.0" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+		<ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="400.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="400.0" prefWidth="400.0" />
+	</columnConstraints>
+
+	<rowConstraints>
+		<RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+		<RowConstraints percentHeight="50.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+
+	<children>
+		<fx:include fx:id="feedPanel" source="panels/feedPanel.fxml" />
+		<fx:include fx:id="logOffPanel" source="panels/logOffPanel.fxml" />
+		<fx:include fx:id="managementPanel" source="panels/managementPanel.fxml" />
+		<fx:include fx:id="tabsPanel" source="panels/tabsPanel.fxml" />
+		<fx:include fx:id="calendarPanel" source="panels/calendarPanel.fxml" />
+	</children>
+
+	<padding>
+		<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+	</padding>
+</GridPane>

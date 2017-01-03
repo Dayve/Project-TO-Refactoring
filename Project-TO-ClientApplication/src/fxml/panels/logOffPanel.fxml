@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane GridPane.columnIndex="1" fx:controller="controllers.panels.LogOffPanelController" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" percentWidth="60.0" />
+		<ColumnConstraints hgrow="SOMETIMES" percentWidth="40.0" />
+	</columnConstraints>
+
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+
+	<children>
+		<Button fx:id="logOffButton" maxWidth="1.7976931348623157E308" onAction="#logoutButtonAction" mnemonicParsing="false" text="Wyloguj" textAlignment="JUSTIFY" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+			<GridPane.margin>
+			<Insets left="5.0" />
+			</GridPane.margin>
+		</Button>
+
+		<Label fx:id="usernameLabel" maxWidth="1.7976931348623157E308" text="Username" textAlignment="RIGHT" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+			<GridPane.margin>
+			<Insets right="5.0" />
+			</GridPane.margin>
+		</Label>
+	</children>
+</GridPane>

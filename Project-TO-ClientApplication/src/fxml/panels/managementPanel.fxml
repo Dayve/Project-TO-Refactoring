@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane GridPane.columnIndex="1" GridPane.rowIndex="1" fx:controller="controllers.panels.ManagementPanelController" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.0" />
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.0" />
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="33.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="multipurposeButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Weź udział" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets left="2.0" right="2.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="newConferenceButton" maxWidth="1.7976931348623157E308" onAction="#addConference" mnemonicParsing="false" text="Nowa konferencja" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets right="2.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="deleteConferenceButton" maxWidth="1.7976931348623157E308" onAction="#removeConference" mnemonicParsing="false" text="Usuń konferencję" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <GridPane.margin>
+            <Insets left="2.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>
